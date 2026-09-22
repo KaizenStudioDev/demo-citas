@@ -26,7 +26,8 @@ CREATE TABLE citas (
   paciente        TEXT NOT NULL,
   profesional_id  INTEGER NOT NULL REFERENCES profesionales(id),
   fecha_hora      TIMESTAMPTZ NOT NULL,
-  creada_en       TIMESTAMPTZ NOT NULL DEFAULT now()
+  creada_en       TIMESTAMPTZ NOT NULL DEFAULT now(),
+  CONSTRAINT cita_unica UNIQUE (profesional_id, fecha_hora)
 );
 
 -- Datos semilla: para que la demo no empiece vacía

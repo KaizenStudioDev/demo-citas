@@ -1,0 +1,23 @@
+/* Estilos mínimos, colores del curso (azul y verde) */
+body { font-family: system-ui, sans-serif; margin: 0; background: #F2F7FD; color: #2E3440; }
+header { background: #0F4C9C; color: white; padding: 16px 24px; }
+header h1 { margin: 0; font-size: 1.3rem; }
+header p { margin: 4px 0 0; font-size: .85rem; color: #C7D8F0; }
+main { max-width: 720px; margin: 24px auto; padding: 0 16px; }
+section { background: white; border: 1px solid #C9DBF0; border-radius: 10px; padding: 16px 20px; margin-bottom: 20px; }
+h2 { color: #0F4C9C; font-size: 1.05rem; margin-top: 0; }
+label { display: block; margin: 10px 0 4px; font-weight: 600; font-size: .9rem; }
+input, select { width: 100%; padding: 8px; border: 1px solid #C9DBF0; border-radius: 6px; box-sizing: border-box; }
+button { margin-top: 14px; background: #1F8A4C; color: white; border: none; padding: 10px 18px; border-radius: 6px; font-size: 1rem; cursor: pointer; }
+button:disabled { background: #88B99E; cursor: not-allowed; }
+button.secundario { background: #0F4C9C; }
+button.secundario:disabled { background: #688BB7; }
+#mensaje { margin-top: 12px; padding: 10px; border-radius: 6px; display: none; font-size: .92rem; }
+#mensaje.ok { display: block; background: #EFF8F2; border: 1px solid #C4E2CF; color: #1F8A4C; }
+#mensaje.error { display: block; background: #FCF1EF; border: 1px solid #EFC9C2; color: #A93226; }
+table { width: 100%; border-collapse: collapse; font-size: .92rem; }
+th, td { text-align: left; padding: 8px 6px; border-bottom: 1px solid #E5EDF7; }
+th { color: #0F4C9C; }
+#estado-servidor { font-size: .8rem; color: #5A6472; }
+.paginacion { display: flex; justify-content: space-between; align-items: center; margin-top: 10px; }
+.paginacion button { margin-top: 0; padding: 6px 12px; font-size: 0.9rem; }
